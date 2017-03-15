@@ -104,7 +104,8 @@ $app->get('/controlpanel', function ($request, $response, $args) {
         // Render index view
         return $this->view->render($response, 'controlpanel.phtml', [
             "key" => $key,
-            "img" => $scanned_directory
+            "img" => $scanned_directory,
+            "weatherbar" => true
         ]);
         } else {
             $this->logger->warning("invalid key used to see controlpanel");

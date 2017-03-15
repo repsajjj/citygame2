@@ -5,6 +5,7 @@
 @import 'boxes';
 @import 'custom_settings';
 @import 'inputs';
+@import 'jquery-ui';
 @import 'round_buttons';
 @import 'mobile';
 
@@ -84,7 +85,7 @@ div {
         }
 
     }
-    
+
     .maps{
         width:20%;
         margin-right:2%;

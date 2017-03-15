@@ -1,15 +1,6 @@
 {% extends 'layout.phtml' %}
 
 {% block body %}
-<!DOCTYPE html>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link href="/css/normalize.css" rel="stylesheet" type="text/css"/>
-<link href="/css/datepicker.css" rel="stylesheet" type="text/css"/>
-
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
 <div class="row">
       <body class="booking">
           <div class="box">
@@ -19,8 +10,8 @@
                       <input type="text" name="lastname" placeholder="Last name">
                       <input type="email" name="email" placeholder="Email">
                       <input type="number" name="phone"  placeholder="Phone number">
-                      <input id="datepicker" name ="date" placeholder="Choose a date" bookings= {{booked}}>
-                      <textarea rows="3" cols="50" name="info" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" >Optional information</textarea>
+                      <input id="datepicker" name ="date" placeholder=" Choose a date" bookings= {{booked}}>
+                      <textarea id="textarea_message" rows="3" cols="50" name="info" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" >Optional information</textarea>
                       <ul class="button-group round">
                         <input id="button" type="submit" class="button success" value="Submit">
                         <input id="button" type="reset" class="button alert" value="Reset">

@@ -1,9 +1,15 @@
 //Style for inputboxes #DRY
-input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea#textarea_message{
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea#textarea_message, #datepicker{
     display: block;
     width:80%;
     margin-left:10%;
     margin-right:10%;
     border-radius: 10px;
     resize: none;
+    margin-bottom: 10px;
+
+}
+
+#datepicker{
+    height: 40px;
 }
