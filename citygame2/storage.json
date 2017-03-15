@@ -1,0 +1,85 @@
+"the | means either the one or the other and is one of the few symbols that don't mess up Atom Beatify"
+currentgame:
+
+    {
+        "gameID": ,
+        "scenarioID": ,
+        "keys": {
+            "commentaar": "keys are used to login on the site for file upload or game managment",
+            "master": 789,
+            "team1": 456,
+            "team2": 123,
+            "team3": ,
+            "team4":
+        },
+        "ended": true | false,
+        "date": "yyyyMMdd or unix timestamp?",
+        "start_time": "uumm or unix timestamp?",
+        "end_time": "uumm or unix timestamp",
+        "statistics": "[]? not sure yet",
+        "teams": {
+            "team1": {
+                "img": ["name", "of", "images"],
+                "players": 2,
+                "score": "? how are we going to calculate this?",
+                "others": "?"
+            },
+            "team2": {}
+        },
+        "objectives": {
+            "1": {
+                "teams": {
+                    "this team has finished this objective": "done",
+                    "this team don't need to do this objective": "not",
+                    "this team has not finished this objective": "pending",
+                    "1": "done",
+                    "2": "done"
+                },
+                "images": [
+                    "images for this objectives",
+                    "in teams is mentioned who uploaded this pic"
+                ]
+            },
+            "2": {
+                "teams": {
+                    "1": "not",
+                    "2": "pending"
+                },
+                "images": [
+                    "images for this objectives",
+                    "in teams is mentioned who uploaded this pic"
+                ]
+            }
+        }
+    }
+},
+
+
+
+
+
+
+
+
+
+scenario: {
+    "ID": 1,
+    "configuration": {
+        "order": "none" | "ordered",
+        "order-description": "none means that all objectives just needs to be done, don't need to be in order" |
+            "ordered means that you need to do the objectives in order of ID" |
+            "maybe make it possible to say objectives 1, 2, 3 needs to be in order, 4, 5, 6 can be through each other but needs to be done all 3 before continueing to 7?",
+        "location": "name of city/place, in plain text",
+        "description": "random, visable for game master",
+        "etc": "is there more needed?"
+    },
+    "objectives": [{
+            "ID": ,
+            "description": ,
+            "location": ["NZ", "OW"],
+            "type": "visit" | "input number" | "key" | "others",
+            "others": "range from location to be valid in meter" | "number code" | "" | "others"
+        },
+        {}
+    ]
+}

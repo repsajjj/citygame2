@@ -1,0 +1,153 @@
+@import 'foundation';
+
+@import '404_pages';
+@import 'backgrounds';
+@import 'boxes';
+@import 'custom_settings';
+@import 'inputs';
+@import 'round_buttons';
+@import 'mobile';
+
+@include foundation-everything;
+
+
+
+div{
+    .top-bar{
+
+        .top-bar-title{
+            padding: 0;
+        }
+        color: white;
+        a{
+            color:white;
+        }
+
+        li{
+            padding-right: 5%;
+        }
+    }
+    .cpanelbox{
+        background: lightgrey;
+        text-align: center;
+        width:95%;
+        margin-top:0%;
+        margin-right:auto;
+        margin-left:auto;
+        border-radius:10px;
+        hr{
+            margin-top: -1%;
+            margin-bottom: 1%;
+        }
+    }
+    #battery-info{
+    }
+}
+
+hr {
+    border-color: #000;
+}
+
+select{
+    border-radius: 10px;
+}
+
+div {
+    .fieldpartial{
+        margin:2%;
+        textarea{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:100%;
+            border-radius: 10px;
+            resize: none;
+        }
+        padding: 10px;
+        fieldset{
+            border-color: #000;
+            border-radius: 10px;
+            padding-top: 0;
+            padding-bottom: 2%;
+        }
+        form.new-objective{
+            h6{
+                float: left;
+            }
+        }
+
+        form.message{
+            button{
+                border-radius: 10px;
+                height: 65px;
+            }
+        }
+
+    }
+    
+    .maps{
+        width:20%;
+        margin-right:2%;
+        margin-left:2%;
+        margin-top:2%;
+    }
+
+    #map {
+        width:100%;
+        height: 350px;
+    }
+    .weather{
+        width: 100%;
+        background: lightgrey;
+        text-align: center;
+        margin-top:20%;
+        margin-right:auto;
+        margin-left:auto;
+        border-radius:10px;
+    }
+}
+
+.cpanelcontent {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    width: 100%;
+}
+
+.flex-item {
+    width: 100%;
+    text-align: center;
+}
+
+#gitbook {
+    border: none;
+    display: block;
+    //top:54px;
+    width: 100%;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+
+    position:relative;
+    //top:54px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    width:100%;
+    border:0;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    //z-index:999999;
+}

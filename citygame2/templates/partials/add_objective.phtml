@@ -1,0 +1,56 @@
+{% block body %}
+<div class="cpanelbox">
+    <div class="fieldpartial" id="new-objective" style="padding-top: 2%; padding-bottom:2%;">
+        <fieldset>
+            <legend>New objective</legend>
+            <form class="new-objective" method="post">
+                <div id="who">
+                    <h6>Please select the recieving teams.</h6>
+                    <input type="checkbox" name="team" value="Team A">Team A<br>
+                    <input type="checkbox" name="team" value="Team B">Team B
+                    <hr>
+                </div>
+                <div id="description">
+                    <h6>Enter a description of the task.</h6>
+                    <textarea rows="3" cols="50" name="description" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" placeholder="Objective description"></textarea>
+                    <hr>
+                </div>
+                <div id="objective-type">
+                    <h6>Please select the objective type.</h6>
+                    <select name="objective-type">
+                        <option value="" disabled selected hidden>Select objective type</option>
+                        <option value="option a">Option A</option>
+                        <option value="option b">Option B</option>
+                        <option value="option c">Option C</option>
+                        <option value="option d">Option D</option>
+                    </select>
+                    <hr>
+                </div>
+                <div id="order">
+                    <h6>Select in what order the task needs to be.</h6>
+                    <select name="objective-order" placeholder="Select order of objective ">
+                        <option value="" disabled selected hidden>Select the order</option>
+                        <option value="before">Before objective...</option><!--Textfield will appear-->
+                        <option value="after">After objective...</option><!--Textfield will appear-->
+                        <option value="first">First</option>
+                        <option value="last">Last</option>
+                        <option value="random">Random</option>
+                    </select>
+                    <hr>
+                </div>
+                <div id="location">
+                    <h6>Select a location on the popup map.</h6>
+                    <hr>
+                    <br>
+                </div>
+                <div id="send new obj buttons">
+                    <ul class="button-group round">
+                      <input type="submit" class="button success" value="Send">
+                      <input type="reset" class="button alert" value="Reset">
+                    </ul>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</div>
+{% endblock %}

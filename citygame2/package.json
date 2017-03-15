@@ -1,0 +1,29 @@
+{
+  "name": "citygame",
+  "version": "1.0.0",
+  "description": "Projectwerk 2 OO.IWT.PBA.2ICT (2016-2017)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.labict.be:silboydens/citygame_game_management.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "foundation-sites": "^6.0.0",
+    "jquery": "^3.0.0",
+    "mongodb": "^2.2.24"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-phpcs": "^0.4.0",
+    "grunt-sass": "^1.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

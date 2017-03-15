@@ -1,0 +1,18 @@
+{% extends 'layout.phtml' %}
+{% block body %}
+<div class="maps">
+  <h1>Select a location!</h1>
+  <p>Click on a location on the map to select it. Drag the marker to change location.</p>
+  <div id="map"></div>
+  <h2>Chosen Location</h2>
+  <form method="post">
+    <input type="text" id="lat" readonly="yes"><br>
+    <input type="text" id="lng" readonly="yes">
+  </form>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+</div>
+<div class="weather">
+  {% include 'partials/weather.html' %}
+</div>
+{% endblock %}

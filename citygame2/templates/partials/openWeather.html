@@ -1,0 +1,28 @@
+{% extends 'layout.phtml' %}
+{% block body %}
+<!DOCTYPE html>
+<script src="/js/weather.js"></script>
+<div class="weather">
+        <div class="row">
+            <div><h2 id="location"></h2></div>
+        </div>
+        <div class="row">
+            <div class="small-6 small-centered columns"><span id="description"></span></div>
+        </div>
+        <div class="row">
+            <div class="large-3 columns"><img id="image" src="" width="150" height="150"></div>
+            <div class="large-6 columns"><h3 id="temp"></h3></div>
+            <div class="large-3 columns"><span id="min"></span><br><span id="max"></span></div>
+        </div>
+        <div class="row">
+            <br>
+            <div class="small-6 small-centered columns"><span style="float:left;" id="windspeed"></span></div>
+            <div class="small-6 small-centered columns"><span style="float:left;" id="airpressure"></span></div>
+            <div class="small-6 small-centered columns"><span style="float:left;" id="humidity"></span></div>
+        </div>
+        <div class="row">
+            <div class="large-6 columns"><span id="min"></span></div>
+            <div class="large-6 columns"><span id="max"></span></div>
+        </div>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'layout.phtml' %}
+
+{% block body %}
+<!DOCTYPE html>
+<div class="row">
+    <body class="scores">
+        <div class="box">
+            <h1>View the scores from past games!</h1>
+            <form method="get">
+                  <p>{{scores.getScore}}</p>
+            </form>
+        </div>
+    </body>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'layout.phtml' %}
+{% block body %}
+<body class="upload">
+    <div class="row">
+        <div class="box" style="">
+            <h1>Upload a file</h1>
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+                <label>Select file to upload:</label>
+                <input type="file" name="newfile" style="margin-left:20%; margin-right:20%;">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+</body>
+{% endblock %}

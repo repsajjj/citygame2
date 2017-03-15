@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="/css/app.css" media="screen" title="no title">
+        <script src="/js/app.js" charset="utf-8"></script>
+        <title>Citygame</title>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <div class="top">
+            {% include 'partials/top-bar.php' %}
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>

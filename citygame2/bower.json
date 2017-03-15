@@ -1,0 +1,20 @@
+{
+  "name": "city_game_management",
+  "authors": [
+    "Group off overkill developers"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.3.0"
+  }
+}

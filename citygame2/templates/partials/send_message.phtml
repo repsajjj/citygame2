@@ -1,0 +1,28 @@
+{% block body %}
+<div class="cpanelbox">
+    <div class="fieldpartial" id="message">
+        <fieldset>
+            <legend>Send message</legend>
+            <form class="message" method="post">
+                <div class="row">
+                    <div class="medium-3 columns">
+                        <button type="button" class="button small" name="button">Send</button>
+                    </div>
+                    <div class="medium-9 columns"><textarea id="textarea_message" rows="3" cols="50" name="description" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" placeholder="Enter your message"></textarea></div>
+                    <div>
+                        <select name="message-recepients" style="width:92%;">
+                            <option value="" disabled selected hidden>Select recieving team</option>
+                            <option value="Team A">Team A</option>
+                            <option value="Team B">Team B</option>
+                            <option value="All teams">All teams</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="button expand" style="width:88%;" name="button">Show history</button>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,94 @@
+{
+    "ID": 1,
+    "configuration": {
+        "order": "orderd",
+        "location": "Ostend Belgium",
+        "description": "this is a test scenario, not a real one",
+        "etc": ""
+    },
+    "objectives": [{
+        "ID": 1,
+        "description": "go to the station(the main entrance, next to the bike shop)",
+        "location": ["51.2292028", "2.9253686"],
+        "type": "visit",
+        "others": "5",
+        "teams": [1, 2, 3, 4]
+    }, {
+        "ID": 2,
+        "description": "wat is het huisnummer van de Sint-Petrus-en-Pauluskerk",
+        "location": ["51.2296592", "2.9205546"],
+        "type": "input number",
+        "others": 7,
+        "teams": [1, 2, 3, 4]
+    }, {
+        "ID": 3.1,
+        "description": "verkrijg een sleutel in het koningshof (eiland maria-hendrikapark)",
+        "location": ["51.2219709", "2.9286744"],
+        "type": "key",
+        "others": "niet open op vrijdag",
+        "teams": [1]
+    }, {
+        "ID": 3.2,
+        "description": "verkrijg een sleutel in het  Balboog St Joris & Café (maria-hendrikapark)",
+        "location": ["51.2199203", "2.9300167"],
+        "type": "key",
+        "others": "niet open op dinsdag",
+        "teams": [2]
+    }, {
+        "ID": 3.3,
+        "description": "verkrijg een sleutel in het Lac Ostende (eiland maria-hendrikapark)",
+        "location": ["51.2224089", "2.9260375"],
+        "type": "key",
+        "others": "",
+        "teams": [3]
+    }, {
+        "ID": 3.4,
+        "description": "verkrijg een sleutel in het BramDingemanse (maria-hendrikapark)",
+        "location": ["51.220711", "2.9269331"],
+        "type": "key",
+        "others": "0475 28 62 35",
+        "teams": [4]
+    }, {
+        "ID": 4,
+        "description": "neem een foto van je groep bij de vuurtoren",
+        "location": ["51.2284522", "2.9404532"],
+        "type": "others",
+        "others": "gameMasterhas to accept the picture",
+        "teams": [1, 2, 3, 4]
+    }, {
+        "ID": 5,
+        "description": "ga naar het einde van de oostelijke strekdam",
+        "location": ["51.2419384", "2.9199163"],
+        "type": "visit",
+        "others": "5",
+        "teams": [1, 2, 3, 4]
+    }, {
+        "ID": 6,
+        "description": "neem de overzetboot",
+        "location": ["51.232077", "2.923071"],
+        "type": "visit",
+        "others": "20",
+        "teams": [1, 2, 3, 4]
+    }, {
+        "ID": 7,
+        "description": "raadsel: park, eiland, gebouwtje",
+        "location": ["51.228542", "2.9127961"],
+        "type": "visit",
+        "others": "20",
+        "teams": [1, 2, 3, 4]
+    }, {
+        "ID": 8,
+        "description": "wie heeft er zin om te zwemmen? (stedelijk zwembad)",
+        "location": ["51.226649", "2.9035095"],
+        "type": "visit",
+        "others": "5",
+        "teams": [1, 2, 3, 4]
+    }, {
+        "ID": 9,
+        "description": "tijd om terug te keren naar school",
+        "location": ["51.222264", "2.893664"],
+        "type": "visit",
+        "others": "10",
+        "teams": [1, 2, 3, 4]
+    }]
+}

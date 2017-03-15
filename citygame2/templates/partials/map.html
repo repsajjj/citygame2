@@ -1,0 +1,39 @@
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyATm4nLg1xaaPhexcibhlGtHAQrqCT-e-4" type="text/javascript"></script>
+<!--<p>disclaimer: this is a example and not a working version yet (PS. click on the markers)</p>-->
+<div class="cpanelbox">
+    <div id="map" style="height: 500px;"></div>
+    <script type="text/javascript">
+    var locations = [
+        ['team1', 51.2272919, 2.9121571, 18],
+        ['team2', 51.2295543, 2.9206104, 21],
+        ['objective 4', 51.2297198, 2.9158992, 21],
+        ['objective 5', 51.2268846, 2.906034, 21],
+        ['destination', 51.220115, 2.893682, 17],
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: new google.maps.LatLng(51.220115, 2.893682),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+    }
+    </script>
+</div>

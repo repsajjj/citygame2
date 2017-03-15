@@ -1,0 +1,7 @@
+database
+webpage
+ - login
+ - map with locations (GPS)
+ - ckat.space alike
+ + openweather
+sftp server

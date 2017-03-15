@@ -1,0 +1,27 @@
+//This is not a page
+body.not_a{
+    background-color:#f3e4bb;
+    max-width: 100%;
+    max-height: 100%;
+    #pipe{
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-right:50%;
+        transform:translate(-50%, -50%);
+    }
+}
+
+//404 pacman page
+/*
+div.pacman{
+        position: absolute;
+        margin: 15%;
+        width: 76%;
+        height: 75%;
+        top: 55%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+}
+*/

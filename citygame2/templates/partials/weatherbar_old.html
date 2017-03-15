@@ -1,0 +1,33 @@
+{% block body %}
+<!DOCTYPE html>
+<nav class="top-bar" data-topbar role="navigation" style="padding:0em">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a id="location"></a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Weather</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+            <li><img id="img_c" width="40px" height="40px"></li>
+            <li><a id="temp_c"></a></li>
+            <li><a id="precipC_c"></a></li>
+<!--            <li><a id="precip_c">Precip. 0,2mm</a></li> -->
+            <li><a id="windspeed_c"></a></li>
+            <li class="divider"></li>
+            <li class="name">
+                <h1><a>Upcoming:</a></h1>
+            </li>
+            <li><img id="img_n" width="40px" height="40px"></li>
+            <li><a id="temp_n"></a></li>
+            <li><a id="precipC_n"></a></li>
+<!--            <li><a id="precip_n">Precip. 0,2mm</a></li> -->
+            <li><a id="windspeed_n"></a></li>
+        </ul>
+    </section>
+</nav>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% block body %}
+    <div>
+        <h1 align="center">404 Page Not Found, We Did Found <a href="http://www.bluefountainmedia.com/404">PacMan</a></h1>
+        <p align="center">
+            The page you are looking for could not be found. Check the address bar
+            to ensure your URL is spelled correctly. If all else fails, you can play
+            some pacman, then you can visit our <a href="{{ path_for('home') }}">home page.</a>
+        </p>
+    </div>
+    <div class="pacman">
+        <embed align="center" id="pacman" src="/content/pacman.swf" width="83%" height="90%"/>
+    </div>
+{% endblock %}

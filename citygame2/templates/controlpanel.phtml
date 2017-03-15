@@ -1,0 +1,39 @@
+{% extends 'layout.phtml' %}
+
+{% block body %}
+
+<!DOCTYPE html>
+{% include 'partials/weatherbar.html' %}
+
+<body class="controlpanel">
+    <div class="cpanelcontent">
+        <!--
+        <div class="row">
+            <span class="flex-item">
+
+            </span>
+        </div>
+    -->
+        <div class="row">
+            <span class="flex-item">
+                {% include 'partials/pending_objectives.phtml' %}
+            </span>
+        </div>
+        <div class="row">
+            <span class="flex-item">
+                {% include 'partials/map.html' %}
+
+                {% include 'partials/batteryinfo.phtml' %}
+                {% include 'partials/photoviewer.php' %}
+            </span>
+        </div>
+    </div>
+</body>
+
+
+
+
+<script type="text/javascript">
+//$('#hourly-weather-forecast').load('http://m.accuweather.com/en/be/oostende/31865/hourly-weather-forecast/31865 #hourly');
+</script>
+{% endblock %}

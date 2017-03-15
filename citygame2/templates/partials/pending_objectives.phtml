@@ -1,0 +1,155 @@
+{% block body %}
+<div class="cpanelbox"  style="height:100%">
+    <div class="fieldpartial" id="pending-objectives">
+        <fieldset>
+            <legend>Pending objectives</legend>
+            <div class="locate-teams">
+                <h5 style="float:left;">Locate teams:</h5>
+                <button type="button" class="button small" name="Team A">Team A</button>
+                <button type="button" class="button small" name="Team B">Team B</button>
+            </div>
+            <hr>
+            <div class="row">
+                <div style="height: 610px; overflow: auto; ">
+                    <div class="table-wrapper" style="height:100%;">
+                        <table width="96%" style="margin: 0px auto;" role="grid">
+                            <thead>
+                                <tr>
+                                    <th width="auto">Progress</th>
+                                    <th>
+                                        <div class="large-3 columns" style="padding-top:2.5%;">Objectives</div>
+                                        <div class="large-9 columns">
+                                            <select class="filter-pending" name="filter" style="margin-bottom:0%;">
+                                                <option value="show all" disabled selected hidden>Select a filter</option>
+                                                <option value="filter done">Show only completed</option>
+                                                <option value="filter pending">Show only pending</option>
+                                                <option value="filter new">Show only not started</option>
+                                                <option value="filter team a">Show only Team A</option>
+                                                <option value="filter team b">Show only Team B</option>
+                                            </select></div>
+
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="progress"></td>
+                                    <td>
+                                        <button class="button expand" type="button" name="button" style="margin-bottom:1%;">
+                                            <div class="row">
+                                                <div class="large-1 columns">1.</div>
+                                                <div class="large-11 columns">
+                                                    <div class="row">
+                                                        <div class="large-5 columns">Objective type</div>
+                                                        <div class="large-7 columns">Description</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="progress"></td>
+                                    <td>
+                                        <button class="button expand" type="button" name="button" style="margin-bottom:1%;">
+                                            <div class="row">
+                                                <div class="large-1 columns">2.</div>
+                                                <div class="large-11 columns">
+                                                    <div class="row">
+                                                        <div class="large-5 columns">Objective type</div>
+                                                        <div class="large-7 columns">Description</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="progress"></td>
+                                    <td>
+                                        <button class="button expand" type="button" name="button" style="margin-bottom:1%;">
+                                            <div class="row">
+                                                <div class="large-1 columns">3.</div>
+                                                <div class="large-11 columns">
+                                                    <div class="row">
+                                                        <div class="large-5 columns">Objective type</div>
+                                                        <div class="large-7 columns">Description</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="progress"></td>
+                                    <td>
+                                        <button class="button expand" type="button" name="button" style="margin-bottom:1%;">
+                                            <div class="row">
+                                                <div class="large-1 columns">4.</div>
+                                                <div class="large-11 columns">
+                                                    <div class="row">
+                                                        <div class="large-5 columns">Objective type</div>
+                                                        <div class="large-7 columns">Description</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="progress"></td>
+                                    <td>
+                                        <button class="button expand" type="button" name="button" style="margin-bottom:1%;">
+                                            <div class="row">
+                                                <div class="large-1 columns">5.</div>
+                                                <div class="large-11 columns">
+                                                    <div class="row">
+                                                        <div class="large-5 columns">Objective type</div>
+                                                        <div class="large-7 columns">Description</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="progress"></td>
+                                    <td>
+                                        <button class="button expand" type="button" name="button" style="margin-bottom:1%;">
+                                            <div class="row">
+                                                <div class="large-1 columns">6.</div>
+                                                <div class="large-11 columns">
+                                                    <div class="row">
+                                                        <div class="large-5 columns">Objective type</div>
+                                                        <div class="large-7 columns">Description</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="progress"></td>
+                                    <td>
+                                        <button class="button expand" type="button" name="button" style="margin-bottom:1%;">
+                                            <div class="row">
+                                                <div class="large-1 columns">7.</div>
+                                                <div class="large-11 columns">
+                                                    <div class="row">
+                                                        <div class="large-5 columns">Objective type</div>
+                                                        <div class="large-7 columns">Description</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+{% endblock %}
